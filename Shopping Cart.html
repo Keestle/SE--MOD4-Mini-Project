@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="Travel Holiday Packages" content="Holiday Packages" />
+        <meta name="Ernie Lim" content="Holiday ecommerce" />
+        <title>Cart Travelmate</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="startbootstrap-shop-item-gh-pages/assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="startbootstrap-shop-item-gh-pages/css/styles.css" rel="stylesheet" />
+        <style>
+            
+            body {
+            display: flex;
+            flex-direction: column;
+            min-height: 200vh; /* Set the minimum height of the body to the viewport height */
+        }
+
+            .main-content {
+            flex: 1; /* Allow the main content to take up remaining vertical space */
+        }
+            .accordion-body {
+                max-height: 150px;
+                overflow-y: auto;
+            }
+
+            .order-summary {
+            background-color: #f8f9fa; /* Set background color for the order summary section */
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        </style>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="">Travelmate</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Holiday Packages</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">All Travelmate Packages</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">Most Popular</a></li>
+                                <li><a class="dropdown-item" href="#!">New Deals</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main content container -->
+    <div class="container mt-4">
+        <div class="row">
+        <!-- Product section-->
+        <div class="col-lg-8">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  1. Customer Details
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <label for="Customer Name">Name:</label>
+                  <input type="text" id="customerName" name="customerName" required>
+                  <div>
+                  <label for="Customer Email">Email:</label>
+                  <input type="text" id="customerEmail" name="customerEmail" required>
+                  </div>
+                    <!-- Add more form fields as needed -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  2. Shipping Details
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <form>
+                        <!-- Your form fields for Shipping Details go here -->
+                        <label for="shippingAddress">Shipping Address:</label>
+                        <input type="text" id="shippingAddress" name="shippingAddress" required>
+                        <!-- Add more form fields as needed -->
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  3. Billing
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <form>
+                        <!-- Your form fields for Billing go here -->
+                        <label for="address">Address</label>
+                        <input type="text" id="Address" name="Address" required>
+                        <!-- Add more form fields as needed -->
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+                    4. Payment
+                  </button>
+                </h2>
+                <div id="collapseFourth" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <form>
+                        <!-- Your form fields for Payment go here -->
+                        <label for="paymentMethod">Payment Method:</label>
+                        <select id="paymentMethod" name="paymentMethod" required>
+                            <option value="creditCard">Credit Card</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                        <div>
+                        <label for="creditCardNumber">Credit Card Number:</label>
+                        <input type="text" id="creditCardNumber" name="creditCardNumber" required>
+                        </div>
+                        <!-- Add more form fields as needed -->
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Order Summary section -->
+        <div class="col-lg-4">
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <!-- Add your order summary content here -->
+                <!-- Example: -->
+                
+            </div>
+    </div>
+</div>          
+          
+          <footer class="py-2">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; Travelmate 2024</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="startbootstrap-shop-item-gh-pages/js/scripts.js"></script>
+    </body>
+</html>
